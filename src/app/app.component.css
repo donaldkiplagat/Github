@@ -1,0 +1,14 @@
+.jumbotron {
+    margin-bottom: 0px;
+    height:180px;
+    width: 550px;
+    margin: auto;
+
+    background-image: url(../environments/assets/github.png);
+    background-position: 0% 51%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    text-shadow: black 0.9em 0.9em 0.9em;
+}

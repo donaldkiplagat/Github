@@ -1,5 +1,14 @@
-<button (click)="searchGithub(search)">Search</button>
-<input type="text" name="search" #search>
+<div class="container">
+
+  <div class="jumbotron">
+  </div>
+
+
+<br><br><br>
+<div class="form-group-row">
+  <input type="text" name="search" #search>
+  <button (click)="searchGithub(search)">Search</button>
+</div>
 
 
 <h2>Username: {{user.login}}</h2>
@@ -11,12 +20,10 @@
 <a href="{{user.html_url}}">Github Site</a>
 
 
-
-
-
 <div *ngFor="let repo of repos" class="column" >
   <h1>{{repo.name}}</h1>
   <p>{{repo.description}}</p>
-  <p>{{repo.created_at|date}}</p>
-  <p>{{repo.total_commits}}</p>
+  <p>Creation date: {{repo.created_at|date}}</p>
+  <!-- <p>Created {{repo.created_at|timeAgo}} days ago</p> -->
+</div>
 </div>
