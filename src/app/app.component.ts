@@ -14,7 +14,7 @@ export class AppComponent {
 
   link = "https://api.github.com/users/";
 
-  access_token= "?access_token=3b535c05eaca64eff60db021cb296e3166d99cb1";
+  access_token= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6";
   user=[];
   repos= [];
 
