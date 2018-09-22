@@ -1,29 +1,72 @@
-<div class="container">
+<div class="container ">
 
   <div class="jumbotron">
   </div>
 
 
-<br><br><br>
-<div class="form-group-row">
-  <input type="text" name="search" #search>
-  <button (click)="searchGithub(search)">Search</button>
+<br><br>
+<div class="text-center">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter Github Username here" name="search" #search>
+    <button class="btn btn-primary" (click)="searchGithub(search)" data-toggle="collapse" data-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Search</button>
+  </div>
 </div>
 
 
-<h2>Username: {{user.login}}</h2>
+
+<div class="row collapse"  id="collapseExample">
+<div class="col-md-12">
+<div class="card" style="width: 30rem;">
+  <img class="card-img-top" src="{{user.avatar_url}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><strong>Username:</strong> {{user.login}}</h5>
+    <p class="card-text"><strong>Bio:</strong> {{user.bio}}</p>
+    <p class="card-text"><strong>Public Repositories:</strong> {{user.public_repos}}</p>
+    <p class="card-text"><strong>Followers:</strong> {{user.followers}}</p>
+    <p class="card-text"><strong>Following:</strong> {{user.following}}</p>
+
+    <a href="{{user.html_url}}" class="btn btn-primary">Visit Github Site</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- <h2>Username: {{user.login}}</h2>
 <img src="{{user.avatar_url}}" alt="">
 <p>Bio: {{user.bio}}</p>
 <p>Public Repositories: {{user.public_repos}}</p>
 <p>Following: {{user.following}}</p>
 <p>Followers: {{user.followers}}</p>
-<a href="{{user.html_url}}">Github Site</a>
+<a href="{{user.html_url}}">Github Site</a> -->
 
+<div class="row">
 
-<div *ngFor="let repo of repos" class="column" >
-  <h1>{{repo.name}}</h1>
-  <p>{{repo.description}}</p>
-  <p>Creation date: {{repo.created_at|date}}</p>
-  <!-- <p>Created {{repo.created_at|timeAgo}} days ago</p> -->
+  <div *ngFor="let repo of repos" class="col-md-3" >
+
+<div class="card" style="width: 18rem;height:22em">
+  <div class="card-body">
+    <h5 class="card-title">{{repo.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{repo.created_at|date}}</h6>
+    <p class="card-text">{{repo.description}}</p>
+    <a href="{{repo.html_url}}" class="card-link">Repository Link</a>
+  </div>
 </div>
 </div>
+
+
+
+
+<!-- <div class="row">
+  <div *ngFor="let repo of repos" class="column panel" >
+    <h1>{{repo.name}}</h1>
+    <p>{{repo.description}}</p>
+    <p>Creation date: {{repo.created_at|date}}</p>
+  </div>
+</div> -->
+
+</div>
+
+
+<!-- <p>Created {{repo.created_at|timeAgo}} days ago</p> -->

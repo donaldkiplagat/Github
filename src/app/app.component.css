@@ -12,3 +12,20 @@
     color: yellow;
     text-shadow: black 0.9em 0.9em 0.9em;
 }
+
+input{
+  position: center;
+  width:650px;
+  margin: auto;
+}
+
+/* #usercard{
+  align: center;
+  margin: auto;
+} */
+
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
