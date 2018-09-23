@@ -27,9 +27,6 @@ export class RepositoriesComponent implements OnInit {
   access_token= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6";
   access_token2= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6&q=";
 
-  // user=[];
-  // repos= [];
-
   search: Search;
   searchArray:any;
   private submitSearch:Function;
