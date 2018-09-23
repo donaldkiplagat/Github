@@ -21,10 +21,7 @@ input{
 blockquote{
   font-size: 20px;
 }
-/* #usercard{
-  align: center;
-  margin: auto;
-} */
+
 
 .card {
         margin: 0 auto; /* Added */
