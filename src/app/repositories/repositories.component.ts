@@ -7,9 +7,6 @@ import {RepoSearch} from '../search-repo/repo-search';
 import {FormsModule} from '@angular/forms';
 
 
-
-
-
 @Component({
   selector: 'app-repositories',
   templateUrl: './repositories.component.html',
