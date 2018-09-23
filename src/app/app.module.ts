@@ -6,8 +6,6 @@ import {RouterModule,Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 
 
-
-
 import { AppComponent } from './app.component';
 import { TimeAgoPipe } from './time-ago.pipe';
 import {CollapseDirective} from './collapse.directive';
