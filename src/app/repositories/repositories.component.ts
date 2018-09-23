@@ -37,14 +37,13 @@ export class RepositoriesComponent implements OnInit {
   constructor(private http:Http) { }
 
 searchRepos(searchrepo:HTMLInputElement){
-  // this.submitSearch = () =>{
   let wholelink2 = this.link2 + "repositories"+ this.access_token2 + searchrepo.value;
      this.http.get(wholelink2).subscribe((res3:Response) =>{
       // this.search = new Search(res3.json().items);
       this.searchArray = res3.json().items;
       console.log(res3.json().items);
     })
-  // }
+
 }
 
 
