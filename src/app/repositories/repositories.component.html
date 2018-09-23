@@ -1,12 +1,27 @@
-<br><br>
+
+<form>
 <div class="text-center">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Github Username here" name="search" #search>
-    <button class="btn btn-primary" (click)="searchGithub(search)" (click)="isCollapsed=!isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" type="button">Search</button>
+    <div class="form-group">
+        <input id="reposearch" type="text" class="form-control" placeholder="Search for a repository here" [(ngModel)]="newSearch.name" name="searchrepo" #searchrepo="ngModel"  required>
+        <button type="submit" (click)="searchRepos(searchrepo)" class="btn btn-primary">Search</button>
   </div>
 </div>
+</form>
+
 
 <div class="row">
+  <div class="col-md-12">
+      <br><h2>{{newSearch.name}}</h2>
+    </div>
+    <div *ngFor="let search of searchArray" class="col-md-3">
+      <div class="card" style="width: 18rem;height:21em">
+        <div class="card-body">
+          <h5 class="card-title">{{search.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{search.created_at|date}}</h6>
+          <p class="card-text">{{search.description}}</p>
+          <a href="{{search.html_url}}" class="card-link">Repository Link</a>
+        </div>
+      </div>
 
   <div *ngFor="let repo of repos" class="col-md-3" >
 

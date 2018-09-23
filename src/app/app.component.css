@@ -18,7 +18,9 @@ input{
   width:650px;
   margin: auto;
 }
-
+blockquote{
+  font-size: 20px;
+}
 /* #usercard{
   align: center;
   margin: auto;

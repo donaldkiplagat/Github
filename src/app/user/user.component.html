@@ -1,6 +1,6 @@
 <div class="container">
 
-<br><br>
+
 <div class="text-center">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Enter Github Username here" name="search" #search>
@@ -25,6 +25,20 @@
 </div>
 </div>
 </div>
+
+<div class="row">
+  <div *ngFor="let repo of repos" class="col-md-3" >
+
+    <div class="card" style="width: 18rem;height:21em">
+      <div class="card-body">
+        <h5 class="card-title">{{repo.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{repo.created_at|date}}</h6>
+        <p class="card-text">{{repo.description}}</p>
+        <a href="{{repo.html_url}}" class="card-link">Repository Link</a>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 
 

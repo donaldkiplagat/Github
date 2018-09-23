@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import{HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
 import {RouterModule,Routes} from '@angular/router';
+import {FormsModule} from '@angular/forms';
+
 
 
 
@@ -16,6 +18,7 @@ export {CollapseDirective} from './collapse.directive';
 
 //Deifining Routes
 const routes: Routes=[
+  {path:"home",component:AppComponent},
   {path:"user",component:UserComponent},
   {path:"repositories",component:RepositoriesComponent},
   // {path:"user",component:UserComponent}
@@ -32,6 +35,7 @@ const routes: Routes=[
     BrowserModule,
     HttpClientModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

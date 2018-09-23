@@ -1,7 +1,5 @@
 <div class="container ">
 
-
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand nav-link">
     <img src="https://icon2.kisspng.com/20180514/hcq/kisspng-github-logo-repository-computer-icons-5afa376beb2671.4883383715263476279632.jpg" alt="Iron Man" width="30" height="30" class="d-inline-block align-top">
@@ -16,7 +14,7 @@
           <a class="nav-link" href="#" routerLinkActive='active'>Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/user' routerLinkActive='active'>User Profile</a>
+          <a class="nav-link" href="#" routerLink='/user' routerLinkActive='active'>User Profile</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink='/repositories' routerLinkActive='active'>Repositories</a>
@@ -27,34 +25,16 @@
   <div class="jumbotron">
   </div>
 
-
-
-<!-- <p>Click on a category on the navigation bar above to retrieve intended user information</p> -->
-
-<router-outlet></router-outlet>
-
-<!--
-<div class="row">
-
-  <div *ngFor="let repo of repos" class="col-md-3" >
-
-<div class="card" style="width: 18rem;height:21em">
-  <div class="card-body">
-    <h5 class="card-title">{{repo.name}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{repo.created_at|date}}</h6>
-    <p class="card-text">{{repo.description}}</p>
-    <a href="{{repo.html_url}}" class="card-link">Repository Link</a>
-  </div>
-</div>
-</div>
-</div> -->
-
-
-
-
-
+<div >
+  <blockquote class="text-center text-lg">
+    <p>Choose a section from the navigation panel above to find Github content</p>
+    <footer><cite>Enter "username" in User Profiles and "repositoryname" in Repositories</cite></footer>
+  </blockquote>
 
 </div>
 
 
-<!-- <p>Created {{repo.created_at|timeAgo}} days ago</p> -->
+
+  <router-outlet></router-outlet>
+
+</div>
