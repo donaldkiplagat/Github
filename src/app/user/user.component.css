@@ -3,12 +3,6 @@ input{
   width:650px;
   margin: auto;
 }
-
-/* #usercard{
-  align: center;
-  margin: auto;
-} */
-
 .card {
         margin: 0 auto; /* Added */
         float: none; /* Added */
