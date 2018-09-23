@@ -38,13 +38,7 @@ export class RepositoriesComponent implements OnInit {
 
 
   constructor(private http:Http) { }
-//   searchGithub(search: HTMLInputElement){
-//   let wholelink2 = this.link + search.value +"/repos"+this.access_token;
-//   this.http.get(wholelink2).subscribe((res2:Response)=>{
-//     this.repos = res2.json();
-//     console.log(this.repos);
-//   })
-// }
+
 searchRepos(searchrepo:HTMLInputElement){
   // this.submitSearch = () =>{
   let wholelink2 = this.link2 + "repositories"+ this.access_token2 + searchrepo.value;
