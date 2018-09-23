@@ -1,6 +1,7 @@
 import { Component, } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Response, Http} from '@angular/http';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -8,6 +9,7 @@ import {Response, Http} from '@angular/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   reposArray:any;
 
@@ -17,6 +19,8 @@ export class AppComponent {
   access_token= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6";
   user=[];
   repos= [];
+
+  public isCollapsed = false;
 
   constructor(private http:Http){}
   searchGithub(search: HTMLInputElement){

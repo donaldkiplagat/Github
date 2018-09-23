@@ -1,0 +1,35 @@
+<div class="container">
+
+<br><br>
+<div class="text-center">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter Github Username here" name="search" #search>
+    <button class="btn btn-primary" (click)="searchGithub(search)" (click)="isCollapsed=!isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" type="button">Search</button>
+  </div>
+</div>
+
+
+<div class="row"  id="collapseExample" ([CollapseDirective])="isCollapsed">
+<div class="col-md-12">
+<div class="card" style="width: 30rem;">
+  <img class="card-img-top" src="{{user.avatar_url}}" >
+  <div class="card-body">
+    <h5 class="card-title"><strong>Username:</strong> {{user.login}}</h5>
+    <p class="card-text"><strong>Bio:</strong> {{user.bio}}</p>
+    <p class="card-text"><strong>Public Repositories:</strong> {{user.public_repos}}</p>
+    <p class="card-text"><strong>Followers:</strong> {{user.followers}}</p>
+    <p class="card-text"><strong>Following:</strong> {{user.following}}</p>
+
+    <a href="{{user.html_url}}" class="btn btn-primary">Visit Github Site</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- <p>Created {{repo.created_at|timeAgo}} days ago</p> -->
