@@ -21,7 +21,8 @@ const routes: Routes=[
   {path:"home",component:AppComponent},
   {path:"user",component:UserComponent},
   {path:"repositories",component:RepositoriesComponent},
-  {path:"",redirectTo:"user",pathMatch:"full"},
+  {path:"personal",component:PersonalComponent},
+  {path:"",redirectTo:"personal",pathMatch:"full"},
   {path:'**',component:NotFoundComponent}
   // {path:"user",component:UserComponent}
 ]

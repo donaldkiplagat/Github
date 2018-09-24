@@ -5,6 +5,8 @@ import {Router} from '@angular/router';
 import {Search} from '../search-class/search';
 import {RepoSearch} from '../search-repo/repo-search';
 import {FormsModule} from '@angular/forms';
+import { environment } from '../../environments/environment';
+
 
 
 @Component({
@@ -21,8 +23,8 @@ export class RepositoriesComponent implements OnInit {
 
 
 
-  access_token= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6";
-  access_token2= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6&q=";
+  access_token= environment.access_token;
+  access_token2= environment.access_token2;
 
   search: Search;
   searchArray:any;

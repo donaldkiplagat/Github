@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Response, Http} from '@angular/http';
 import {Router} from '@angular/router';
+import { environment } from '../../environments/environment';
+
 
 
 @Component({
@@ -12,7 +14,7 @@ import {Router} from '@angular/router';
 export class UserComponent implements OnInit {
   link = "https://api.github.com/users/";
 
-  access_token= "?access_token=c5394af54d25f5229f088d2b74afca2fc3b017b6";
+  access_token= environment.access_token;
   user=[];
   repos= [];
 
