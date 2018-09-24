@@ -46,8 +46,6 @@ export class AppComponent {
 
 
   ngOninit(){
-  //   this.http.get("https://api.github.com/users/donaldkiplagat?access_token=3b535c05eaca64eff60db021cb296e3166d99cb1").subscribe((res:Response)=>{
-  //   console.log(res.json());
-  // })
+
   }
 }
