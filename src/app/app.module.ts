@@ -11,6 +11,8 @@ import { TimeAgoPipe } from './time-ago.pipe';
 import {CollapseDirective} from './collapse.directive';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { UserComponent } from './user/user.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PersonalComponent } from './personal/personal.component';
 
 export {CollapseDirective} from './collapse.directive';
 
@@ -19,6 +21,8 @@ const routes: Routes=[
   {path:"home",component:AppComponent},
   {path:"user",component:UserComponent},
   {path:"repositories",component:RepositoriesComponent},
+  {path:"",redirectTo:"user",pathMatch:"full"},
+  {path:'**',component:NotFoundComponent}
   // {path:"user",component:UserComponent}
 ]
 
@@ -27,7 +31,9 @@ const routes: Routes=[
     AppComponent,
     TimeAgoPipe,
     RepositoriesComponent,
-    UserComponent
+    UserComponent,
+    NotFoundComponent,
+    PersonalComponent
   ],
   imports: [
     BrowserModule,

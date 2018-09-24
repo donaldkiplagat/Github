@@ -11,10 +11,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLinkActive='active'>Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" routerlink='' routerLinkActive='active'>Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink='/user' routerLinkActive='active'>User Profile</a>
+          <a class="nav-link" href="#" routerLink='/user' routerLinkActive='active'>User Profile<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink='/repositories' routerLinkActive='active'>Repositories</a>
@@ -30,11 +30,9 @@
     <p>Choose a section from the navigation panel above to find Github content</p>
     <footer><cite>Enter "username" in User Profiles and "repositoryname" in Repositories</cite></footer>
   </blockquote>
-
 </div>
 
 
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 
 </div>
