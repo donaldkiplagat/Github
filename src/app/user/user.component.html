@@ -19,6 +19,7 @@
         <p class="card-text"><strong>Public Repositories:</strong> {{user.public_repos}}</p>
         <p class="card-text"><strong>Followers:</strong> {{user.followers}}</p>
         <p class="card-text"><strong>Following:</strong> {{user.following}}</p>
+        <p class="card-text"><strong>Account Created on:</strong> {{user.created_at|date}}</p>
 
         <a href="{{user.html_url}}" class="btn btn-primary">Visit Github Site</a>
       </div>
