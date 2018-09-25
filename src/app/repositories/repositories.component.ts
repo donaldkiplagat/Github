@@ -18,8 +18,8 @@ export class RepositoriesComponent implements OnInit {
   reposArray:any;
 
 
-  link = "https://api.github.com/users/";
-  link2 = "https://api.github.com/search/";
+  link = environment.link;
+  link2 = environment.link2;
 
 
 

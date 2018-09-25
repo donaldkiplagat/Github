@@ -5,8 +5,11 @@
 export const environment = {
   production: false,
   apiUrl:"https://api.github.com",
-  access_token:"?access_token=eef53bab59550743a01cee3cb39a87af832d1b87",
-  access_token2: "?access_token=eef53bab59550743a01cee3cb39a87af832d1b87&q=",
+  access_token:"?access_token=336f3506d6dbb28610c7994a601cb04cea2de305",
+  access_token2: "?access_token=336f3506d6dbb28610c7994a601cb04cea2de305&q=",
+  link : "https://api.github.com/users/",
+  link2 : "https://api.github.com/search/",
+
 
 };
 

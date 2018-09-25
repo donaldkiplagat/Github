@@ -20,7 +20,7 @@ export class AppComponent {
   reposArray:any;
 
 
-  link = "https://api.github.com/users/";
+  link =environment.link;
 
 
   access_token= environment.access_token;

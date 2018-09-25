@@ -12,7 +12,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./personal.component.css']
 })
 export class PersonalComponent implements OnInit {
-  link = "https://api.github.com/users/";
+  link = environment.link;
 
   access_token= environment.access_token;
   user=[];
