@@ -26,10 +26,10 @@ export class RepositoriesComponent implements OnInit {
   access_token= environment.access_token;
   access_token2= environment.access_token2;
 
-  search: Search;
+
+  search: any;
   searchArray:any;
   private submitSearch:Function;
-  newSearch = new RepoSearch(name);
 
 
 

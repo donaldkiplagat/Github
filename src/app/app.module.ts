@@ -8,14 +8,12 @@ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TimeAgoPipe } from './time-ago.pipe';
-import {CollapseDirective} from './collapse.directive';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { UserComponent } from './user/user.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PersonalComponent } from './personal/personal.component';
 import { HighlightDirective } from './highlight.directive';
 
-export {CollapseDirective} from './collapse.directive';
 
 //Deifining Routes
 const routes: Routes=[

@@ -17,22 +17,20 @@ import { environment } from './../environments/environment';
 })
 
 export class AppComponent {
-  reposArray:any;
-
-
-  link =environment.link;
-
+  link = environment.link;
 
   access_token= environment.access_token;
-  user=[];
-  repos= [];
+  user:any;
+  repos:any;
 
-  public isCollapsed = false;
+  personal= "donaldkiplagat"
 
-  constructor(private http:Http){}
-  searchGithub(search: HTMLInputElement){
-    let wholelink = this.link + search.value + this.access_token;
-    let wholelink2 = this.link + search.value +"/repos"+this.access_token;
+
+  constructor(private http: Http) { }
+
+  ngOnInit() {
+    let wholelink = this.link + this.personal + this.access_token;
+    let wholelink2 = this.link + this.personal +"/repos"+this.access_token;
     this.http.get(wholelink).subscribe((res:Response)=>{
       this.user = res.json();
       console.log(this.user);
@@ -41,11 +39,5 @@ export class AppComponent {
       this.repos = res2.json();
       console.log(this.repos);
     })
-
-  }
-
-
-  ngOninit(){
-
   }
 }

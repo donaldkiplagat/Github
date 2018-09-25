@@ -15,8 +15,8 @@ export class PersonalComponent implements OnInit {
   link = environment.link;
 
   access_token= environment.access_token;
-  user=[];
-  repos= [];
+  user:any;
+  repos:any;
 
   personal= "donaldkiplagat"
 

@@ -11,7 +11,6 @@ export const environment = {
   link : "https://api.github.com/users/",
   link2 : "https://api.github.com/search/",
 
-
 };
 
 /*
