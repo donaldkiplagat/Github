@@ -2,7 +2,6 @@
 
 # compiled output
 environments/environment.ts
-/dist
 /tmp
 /out-tsc
 
