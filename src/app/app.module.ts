@@ -13,6 +13,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
 import { UserComponent } from './user/user.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PersonalComponent } from './personal/personal.component';
+import { HighlightDirective } from './highlight.directive';
 
 export {CollapseDirective} from './collapse.directive';
 
@@ -34,7 +35,8 @@ const routes: Routes=[
     RepositoriesComponent,
     UserComponent,
     NotFoundComponent,
-    PersonalComponent
+    PersonalComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
