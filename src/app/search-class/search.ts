@@ -1,5 +1,5 @@
 export class Search {
-  constructor(public name:any){
+  constructor(public login:string, bio:string,followers:number,following:number){
 
   }
 }

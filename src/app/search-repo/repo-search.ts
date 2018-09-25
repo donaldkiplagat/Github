@@ -1,5 +1,5 @@
 export class RepoSearch {
-  constructor(public name:string){
-    
+  constructor(public name:string, description:string){
+
   }
 }
