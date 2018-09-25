@@ -1,27 +1,52 @@
-# Github
+# Github API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
-## Development server
+This web-app was created in order to retrieve information from Github using an API.Developed during Moringa Core. This is Week 2's Independent Project.
+Date: 21st September 2018
+By: Donald Kiplagat
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
+The webapp contains allows one to search for User profiles and Repositories from Github as well as view info associated to each.
+## Setup/Installation Requirements
+* The github page is currently live thus the following link will take you to the webpage "https://donaldkiplagat.github.io/Github/"
+* As long as you have a compatible browser the document will work.
+* Internet Connection is required to initiate API connection
 
-## Code scaffolding
+### Known Bugs
+Due to API restrictions one can only make a limited number of requests.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Behaviour Driven Development
+* The program should return a user's profile details when the correct username is entered in the User Profile section.<br> 
+Input Example:"donaldkiplagat "<br>
+Output Example: "Donald Kiplagat's information is displayed"
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* The program should return repositories in relation to the search term the user enters in the Repositories section.<br>
+Input Example:"Calculator"<br>
+Output Example: "Repositories with the keyword 'calculator' are returned" <br>
 
-## Running unit tests
+* When the user clicks on the repository link it should redirect them to the github site for that repository.<br>
+Input Example: "Maze"<br>
+Output Exaple: Redirection to 'Maze' github site
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* When the user clicks on 'Visit Github Site' on a user's profile they should be redirected to the user's github site.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Technologies Used
+* HTML was used in making the skeleton of the website.
+* CSS and Bootstrap was used in styling the document.
+* Atom was the source code editor of choice.
+* Git and Github were used as my local and online repositories respectively.
+* AngularCLI was used in creating the components/classes/directives/pipes needed in the web-app
+* Github's API and Access Token was used in creating the connection to Github.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Support and contact details
+* Contact me through my email: donald.k.kiplagat@gmail.com
+* The source code is also contained within the folder containing this ReadMe with comments on the code thus third-party support can be offered.
+
+### License
+Moringa School
+Copyright (c)2018 **Github by Yours Truly-Donald Kiplagat**
+  

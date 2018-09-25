@@ -40,7 +40,7 @@ searchRepos(searchrepo:HTMLInputElement){
      this.http.get(wholelink2).subscribe((res3:Response) =>{
       // this.search = new Search(res3.json().items);
       this.searchArray = res3.json().items;
-      console.log(res3.json().items);
+      console.log(res3.json());
     })
 
 }

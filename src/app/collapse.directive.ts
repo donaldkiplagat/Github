@@ -1,17 +1,24 @@
-import { Directive,Input } from '@angular/core';
+import { Directive,Input,ElementRef,HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appCollapse]',
-  exportAs: 'appCollapse',
-  host: {'[class.collapse]': 'true', '[class.show]': '!collapsed'}})
-
+})
   export class CollapseDirective {
-    /**
-    * A flag indicating collapsed (true) or open (false) state.
-    */
-    @Input('appCollapse') collapsed = false;
+
+  constructor(private elem:ElementRef) { }
 
 
-  constructor() { }
+  @HostListener("click") onClicks(){
+    this.textDeco("line-through")
+  }
+
+  @HostListener("dblclick") onDoubleClicks(){
+    this.textDeco("None")
+  }
+
+  private textDeco(action:string){
+    this.elem.nativeElement.style.textDecoration=action;
+
+  }
 
 }
